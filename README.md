@@ -27,15 +27,14 @@ ml/    synthetic data generation, training, export
 ```bash
 cd web
 npm install          # also copies ONNX Runtime wasm files into public/ort
-npm run dev          # https://mahjong.local:5173 on the phone (or https://<your-mac-ip>:5173)
+npm run dev          # https://mahjong.local/ on the phone (or https://<your-mac-ip>/)
 ```
 
-On macOS `npm run dev` also advertises the server on the local network under the Bonjour
-name `mahjong.local`, so the phone can use that instead of the IP address (some routers do
-not pass Bonjour between wired and Wi-Fi devices; the IP address always works).
-To drop the `:5173` from the address, run `sudo sh scripts/port443.sh` once per boot; it
-forwards port 443 to the dev server. On the phone, "Add to Home Screen" installs the app
-so no address has to be typed at all.
+`npm run dev` serves on port 443, so the phone address needs no port number (macOS lets
+ordinary users bind it; use `PORT=5173 npm run dev` elsewhere). On macOS it also
+advertises the server under the Bonjour name `mahjong.local` (some routers do not pass
+Bonjour between wired and Wi-Fi devices; the IP address always works). On the phone,
+"Add to Home Screen" installs the app so no address has to be typed at all.
 Camera access needs HTTPS. Without a certificate the dev server falls back to a
 self-signed one (accept it on the phone; the browser keeps showing "Not Secure").
 `npm run dev:http` serves plain HTTP on port 5174 for desktop testing without a camera.
