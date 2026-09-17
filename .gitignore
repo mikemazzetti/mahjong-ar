@@ -8,9 +8,9 @@ ml/*.pt
 public/ort/
 public/samples/
 ml/checkpoints/
-web/certs/
 web/public/rootCA.pem
 ml/assets/ymi_faces/
 ml/assets/fluffystuff/
 ml/assets/samoheen/
 __pycache__/
+web/certs*/
