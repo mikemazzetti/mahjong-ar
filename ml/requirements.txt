@@ -1,0 +1,9 @@
+torch
+torchvision
+ultralytics
+onnx
+onnxslim
+onnxruntime
+pillow
+opencv-python-headless
+numpy

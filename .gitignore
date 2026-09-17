@@ -1,0 +1,16 @@
+node_modules/
+dist/
+ml/.venv/
+ml/data/
+ml/runs/
+ml/*.pt
+.DS_Store
+public/ort/
+public/samples/
+ml/checkpoints/
+web/certs/
+web/public/rootCA.pem
+ml/assets/ymi_faces/
+ml/assets/fluffystuff/
+ml/assets/samoheen/
+__pycache__/

@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev"
+      ],
+      "port": 5173,
+      "url": "https://localhost:5173"
+    },
+    {
+      "name": "web-http",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/mikemazzetti/mahjong-ar/web",
+        "run",
+        "dev:http"
+      ],
+      "port": 5174,
+      "url": "http://localhost:5174"
+    },
+    {
+      "name": "web-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "/Users/mikemazzetti/mahjong-ar/web",
+        "run",
+        "preview:http"
+      ],
+      "port": 4174,
+      "url": "http://localhost:4174"
+    }
+  ]
+}

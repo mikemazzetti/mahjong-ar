@@ -1,0 +1,8 @@
+0/3200 images, 5 boxes
+500/3200 images, 5379 boxes
+1000/3200 images, 10762 boxes
+1500/3200 images, 16045 boxes
+2000/3200 images, 21399 boxes
+2500/3200 images, 26868 boxes
+3000/3200 images, 32182 boxes
+done: 3200 images, 34222 boxes -> data/synth2/data.yaml
